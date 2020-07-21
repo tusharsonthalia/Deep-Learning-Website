@@ -1,0 +1,5 @@
+# the cache file for flask
+__pycache__
+
+# the html build of the README.md file
+README.html
