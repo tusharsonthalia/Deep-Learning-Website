@@ -1,0 +1,33 @@
+{% extends "bootstrap/base.html" %}
+
+{% block navbar %}
+    {{ nav.navbar.render() }}
+{% endblock %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment</title>
+</head>
+<body>
+    <div class="content">
+        <div>
+            <h1>Sentiment Classification</h1>
+        </div>
+        <div>
+            <form action="/sentiment" method="POST">
+                <textarea name="text" cols="30" rows="10"></textarea>
+                <button type="submit">Submit</button>
+                <hr>
+                <div>
+                    <label>Result:</label>
+                    <input type="text" readonly value="{{ result }}">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock %}
