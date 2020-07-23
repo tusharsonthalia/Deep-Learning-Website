@@ -3,3 +3,6 @@ __pycache__
 
 # the html build of the README.md file
 README.html
+
+# sublime project environment
+*.sublime-*
