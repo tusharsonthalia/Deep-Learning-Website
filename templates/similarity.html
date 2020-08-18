@@ -1,0 +1,40 @@
+{% extends "bootstrap/base.html" %}
+
+{% block navbar %}
+    {{ nav.navbar.render() }}
+{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Deep Learning Demos: Text Similarity</title>
+        <link rel="stylesheet" type="text/css" href="static/style.css">
+    </head>
+    <body>
+        <div class="content">
+            <div>
+                <h1>Text Similarity</h1>
+            </div>
+            <div>
+                <form>
+                    <div class="form-group">
+                        <label for="textInput">Text input 1</label>
+                        <input type="text" class="form-control" id="textInput1" placeholder="Enter text input 1 here">
+                    </div>
+                    <div class="form-group">
+                        <label for="textInput">Text input 2</label>
+                        <input type="text" class="form-control" id="textInput2" placeholder="Enter text input 2 here">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Get Similarity Score</button>
+                    <hr>
+                    <div class="form-group">
+                        <label for="textInput">Result:</label>
+                        <input type="text" readonly class="form-control" id="result" placeholder="Result will appear here">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+{% endblock %}

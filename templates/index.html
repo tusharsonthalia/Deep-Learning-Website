@@ -1,0 +1,25 @@
+{% extends "bootstrap/base.html" %}
+
+{% block navbar %}
+    {{ nav.navbar.render() }}
+{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Deep Learning Demos Home Page</title>
+        <link rel="stylesheet" type="text/css" href="static/style.css">
+    </head>
+    <body>
+        <div class="content">
+            <div>
+                <h1>Deep Learning Demos</h1>
+            </div>
+            <div>
+                <p>Demos of Natural Language Processing (NLP) and Computer Vision (CV) applications that use Deep Learning Networks.</p>
+            </div>
+        </div>
+    </body>
+</html>
+{% endblock %}

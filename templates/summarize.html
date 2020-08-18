@@ -1,0 +1,36 @@
+{% extends "bootstrap/base.html" %}
+
+{% block navbar %}
+    {{ nav.navbar.render() }}
+{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Deep Learning Demos: Text Summarization</title>
+        <link rel="stylesheet" type="text/css" href="static/style.css">
+    </head>
+    <body>
+        <div class="content">
+            <div>
+                <h1>Text Summarization</h1>
+            </div>
+            <div>
+                <form>
+                    <div class="form-group">
+                    <label for="textInput">Original Text</label>
+                    <textarea class="form-control" id="textInput"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Summarize</button>
+                    <hr>
+                    <div class="form-group">
+                        <label for="textInput">Text Summary</label>
+                        <textarea readonly class="form-control" id="textSummary"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+{% endblock %}

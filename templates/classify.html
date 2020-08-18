@@ -1,0 +1,49 @@
+{% extends "bootstrap/base.html" %}
+
+{% block navbar %}
+    {{ nav.navbar.render() }}
+{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Deep Learning Demos: Text Classification</title>
+        <style>
+            body {
+              background: #555;
+            }
+            .content {
+              max-width: 800px;
+              margin: auto;
+              background: white;
+              padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <div>
+                <h1>Text Classification</h1>
+            </div>
+            <div>
+                <form action="/classify" method="post">
+                    <div class="form-group">
+                    <label for="textInput">Input:</label>
+                    <textarea name="textInput" class="form-control" id="textInput" placeholder="Enter text to classify here"></textarea>
+                    <!-- <input type="text" class="form-control" name="textInput" id="textInput" placeholder="Enter text to classify here"> -->
+                    </div>
+                    <button type="submit" class="btn btn-primary">Classify</button>
+                    <hr>
+                    <div class="form-group">
+                        <label for="textInput">Result:</label>
+                        <input type="text" readonly class="form-control" id="result" placeholder="Result will appear here" value="{{ result }}">
+                    </div>
+                
+                </form>
+            </div>
+        
+        </div>
+    </body>
+</html>
+{% endblock %}
