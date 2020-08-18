@@ -1,0 +1,187 @@
+INFO:app:loading model CND ...
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:74: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:4138: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3976: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:174: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:181: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:186: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:190: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:199: The name tf.is_variable_initialized is deprecated. Please use tf.compat.v1.is_variable_initialized instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:206: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/optimizers.py:790: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3295: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/ops/math_grad.py:1424: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:986: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:973: The name tf.assign is deprecated. Please use tf.compat.v1.assign instead.
+
+INFO:app:... model loaded
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 15:01:37] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 15:01:38] "[37mGET /cnn HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 15:01:38] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+INFO:app: CND webapp: image saved successfully
+INFO:app: CND webapp: sending POST request with data: ...
+
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:5000
+INFO:app:CNN API: preprocessing image
+INFO:app:CNN API: received RGB image
+INFO:app:CNN API: converting image to array
+INFO:app:CNN API: expanding dimensions
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 15:01:43] "[37mPOST /cnnApi HTTP/1.1[0m" 200 -
+DEBUG:urllib3.connectionpool:http://localhost:5000 "POST /cnnApi HTTP/1.1" 200 54
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 15:01:43] "[37mPOST /cnn HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 15:01:43] "[37mGET /static/images/13.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 15:21:14] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 15:24:46] "[37mGET /cnn HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 15:24:46] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+INFO:app: CND webapp: image saved successfully
+INFO:app: CND webapp: sending POST request with data: ...
+
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:5000
+INFO:app:CNN API: preprocessing image
+INFO:app:CNN API: received RGB image
+INFO:app:CNN API: converting image to array
+INFO:app:CNN API: expanding dimensions
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 15:25:17] "[37mPOST /cnnApi HTTP/1.1[0m" 200 -
+DEBUG:urllib3.connectionpool:http://localhost:5000 "POST /cnnApi HTTP/1.1" 200 53
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 15:25:17] "[37mPOST /cnn HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 15:25:17] "[37mGET /static/images/19.jpg HTTP/1.1[0m" 200 -
+INFO:app:loading model CND ...
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:74: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:4138: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3976: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:174: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:181: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:186: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:190: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:199: The name tf.is_variable_initialized is deprecated. Please use tf.compat.v1.is_variable_initialized instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:206: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/optimizers.py:790: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3295: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/tensorflow_core/python/ops/math_grad.py:1424: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:986: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.
+
+WARNING:tensorflow:From /Users/navnitbelur/opt/anaconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:973: The name tf.assign is deprecated. Please use tf.compat.v1.assign instead.
+
+INFO:app:... model loaded
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app: CND webapp: image saved successfully
+INFO:app: CND webapp: sending POST request with data: ...
+
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:5000
+INFO:app:CNN API: preprocessing image
+INFO:app:CNN API: received RGB image
+INFO:app:CNN API: converting image to array
+INFO:app:CNN API: expanding dimensions
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 15:48:59] "[37mPOST /cnnApi HTTP/1.1[0m" 200 -
+DEBUG:urllib3.connectionpool:http://localhost:5000 "POST /cnnApi HTTP/1.1" 200 55
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 15:48:59] "[37mPOST /cnn HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 15:48:59] "[37mGET /static/images/3.jpg HTTP/1.1[0m" 200 -
+INFO:app: CND webapp: image saved successfully
+INFO:app: CND webapp: sending POST request with data: ...
+
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:5000
+INFO:app:CNN API: preprocessing image
+INFO:app:CNN API: received RGB image
+INFO:app:CNN API: converting image to array
+INFO:app:CNN API: expanding dimensions
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 16:16:47] "[37mPOST /cnnApi HTTP/1.1[0m" 200 -
+DEBUG:urllib3.connectionpool:http://localhost:5000 "POST /cnnApi HTTP/1.1" 200 53
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 16:16:47] "[37mPOST /cnn HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 16:16:47] "[37mGET /static/images/224.jpg HTTP/1.1[0m" 200 -
+INFO:app: CND webapp: image saved successfully
+INFO:app: CND webapp: sending POST request with data: ...
+
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:5000
+INFO:app:CNN API: preprocessing image
+INFO:app:CNN API: received RGB image
+INFO:app:CNN API: converting image to array
+INFO:app:CNN API: expanding dimensions
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 16:18:37] "[37mPOST /cnnApi HTTP/1.1[0m" 200 -
+DEBUG:urllib3.connectionpool:http://localhost:5000 "POST /cnnApi HTTP/1.1" 200 54
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 16:18:37] "[37mPOST /cnn HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 16:18:37] "[37mGET /static/images/178.jpg HTTP/1.1[0m" 200 -
+INFO:app: CND webapp: image saved successfully
+INFO:app: CND webapp: sending POST request with data: ...
+
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:5000
+INFO:app:CNN API: preprocessing image
+INFO:app:CNN API: received RGB image
+INFO:app:CNN API: converting image to array
+INFO:app:CNN API: expanding dimensions
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 16:20:37] "[37mPOST /cnnApi HTTP/1.1[0m" 200 -
+DEBUG:urllib3.connectionpool:http://localhost:5000 "POST /cnnApi HTTP/1.1" 200 51
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 16:20:37] "[37mPOST /cnn HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 16:20:37] "[37mGET /static/images/101.jpg HTTP/1.1[0m" 200 -
+INFO:app: CND webapp: image saved successfully
+INFO:app: CND webapp: sending POST request with data: ...
+
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:5000
+INFO:app:CNN API: preprocessing image
+INFO:app:CNN API: received RGB image
+INFO:app:CNN API: converting image to array
+INFO:app:CNN API: expanding dimensions
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 16:21:08] "[37mPOST /cnnApi HTTP/1.1[0m" 200 -
+DEBUG:urllib3.connectionpool:http://localhost:5000 "POST /cnnApi HTTP/1.1" 200 54
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 16:21:08] "[37mPOST /cnn HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 16:21:08] "[37mGET /static/images/293.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 16:25:08] "[37mGET /sentiment HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 16:33:01] "[37mGET /cnn HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 16:33:01] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+INFO:app: CND webapp: image saved successfully
+INFO:app: CND webapp: sending POST request with data: ...
+
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:5000
+INFO:app:CNN API: preprocessing image
+INFO:app:CNN API: received RGB image
+INFO:app:CNN API: converting image to array
+INFO:app:CNN API: expanding dimensions
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 16:33:09] "[37mPOST /cnnApi HTTP/1.1[0m" 200 -
+DEBUG:urllib3.connectionpool:http://localhost:5000 "POST /cnnApi HTTP/1.1" 200 53
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 16:33:09] "[37mPOST /cnn HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 16:33:09] "[37mGET /static/images/158.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 16:40:27] "[37mGET /sentiment HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 16:43:28] "[37mGET /cnn HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 16:43:28] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+INFO:app: CND webapp: image saved successfully
+INFO:app: CND webapp: sending POST request with data: ...
+
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:5000
+INFO:app:CNN API: preprocessing image
+INFO:app:CNN API: received RGB image
+INFO:app:CNN API: converting image to array
+INFO:app:CNN API: expanding dimensions
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 16:43:33] "[37mPOST /cnnApi HTTP/1.1[0m" 200 -
+DEBUG:urllib3.connectionpool:http://localhost:5000 "POST /cnnApi HTTP/1.1" 200 56
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2020 16:43:33] "[37mPOST /cnn HTTP/1.1[0m" 200 -
