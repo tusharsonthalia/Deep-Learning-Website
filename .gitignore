@@ -6,3 +6,6 @@ README.html
 
 # sublime project environment
 *.sublime-*
+
+# the deep learning models
+*.h5
